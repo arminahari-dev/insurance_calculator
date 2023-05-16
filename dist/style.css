@@ -1,0 +1,145 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  direction: rtl;
+}
+@font-face {
+  font-family: test;
+  src: url(../Estedad-Light.woff2);
+}
+body {
+  font-family: test;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #999ac6;
+  gap: 12rem;
+}
+#resualt {
+  width: 640px;
+  height: 638px;
+  background: #b8bacf;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 2.3rem;
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  padding: 2rem;
+  overflow-y: auto;
+  direction: initial;
+}
+#master {
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+}
+#div1 {
+  background: rgb(255, 255, 255);
+  padding: 2rem;
+  border-radius: 20px;
+}
+button {
+  font-weight: bolder;
+}
+a {
+  font-weight: bolder;
+}
+select {
+  font-family: test;
+  outline: none;
+  border: none;
+  width: 20rem;
+  height: 3rem;
+  background: none;
+  border-bottom: 2px solid #999ac6;
+  border-radius: 14px;
+  cursor: pointer;
+  padding-right: 1rem;
+}
+option {
+  cursor: pointer;
+}
+select:focus {
+  background-color: #d5d9e6;
+}
+h1 {
+  font-size: 24px;
+  text-decoration: underline;
+  text-decoration-style: inherit;
+}
+b {
+  font-weight: bolder;
+  font-size: 30px;
+}
+.lbl_titel {
+  color: #000000;
+  font-weight: bolder;
+}
+.box {
+  width: 574px;
+  height: 638px;
+  background: #b8bacf;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.titel {
+  display: flex;
+  align-items: baseline;
+  gap: 2rem;
+  padding-top: 2rem;
+}
+.car_name {
+  display: flex;
+  flex-direction: column;
+}
+.car_year {
+  display: flex;
+  flex-direction: column;
+}
+.calcute_cta {
+  width: 10rem;
+  height: 3rem;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-family: test;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  background: #e8ebe4;
+}
+.price {
+  font-weight: bolder;
+  font-size: 20px;
+  text-decoration: underline;
+  letter-spacing: 2px;
+}
+.swal-overlay {
+  background-color: rgba(228, 228, 228, 0.45);
+  backdrop-filter: blur(15px);
+  border-radius: 12px;
+}
+.swal-titel {
+  font-size: 26px;
+}
+#copyinfobtn {
+  background: antiquewhite;
+  padding: 0.5rem 2rem;
+  border-radius: 11px;
+  text-decoration: none;
+  color: #000000;
+}

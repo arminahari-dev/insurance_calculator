@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="max-2xl:flex-col">
+    <form class="box max-md:w-96 max-md:h-128">
+      <div class="titel">
+        <h1>محاسبه آنلاین قیمت <b>بیمه</b> خودرو</h1>
+        <div id="date"></div>
+      </div>
+      <div class="inputs">
+        <div class="car_name">
+          <label for="" class="lbl_titel">مدل خودرو </label>
+          <select name="" id="carname">
+            <option value="">-انتخاب-</option>
+            <option value="pride111">پراید111</option>
+            <option value="pride132">132پراید</option>
+            <option value="benz">بنز</option>
+            <option value="bmv">بی ام و</option>
+          </select>
+        </div>
+        <div class="car_year">
+          <label for="" class="lbl_titel"> سال ساخت </label>
+          <select name="" id="caryear_select">
+            <option value="">-انتخاب-</option>
+          </select>
+        </div>
+        <div class="insurance_type">
+          <label for="" class="lbl_titel">نوع بیمه </label>
+          <div class="insurancetype_g1">
+            <label for="">ساده-شخص ثالث</label>
+            <input
+              type="radio"
+              id="insurance_level"
+              name="level"
+              value="ساده-شخص ثالث"
+              checked
+            />
+          </div>
+          <div class="insurancetype_g2">
+            <label for="">کامل - شخص ثالث با بیمه بدنه</label>
+            <input
+              type="radio"
+              id="insurance_level"
+              name="level"
+              value="کامل - شخص ثالث با بیمه بدنه"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="submit">
+        <button class="calcute_cta">محاسبه قیمت</button>
+      </div>
+    </form>
+    <div id="resualt"></div>
+    <script src="./classes.js"></script>
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </body>
+</html>
